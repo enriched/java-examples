@@ -192,7 +192,7 @@ public class WordCounter {
 
   /** Stores the results from parsing a resource so that they can be cached and looked up later. */
   private static class WordMatchResult implements Delayed {
-    static long CACHE_FOR_MILLIS = 3600000; // One hour
+    static long CACHE_FOR_MILLIS = 100;//3600000; // One hour
     long finishedAt = System.currentTimeMillis();
 
     WordMatchContext context;
