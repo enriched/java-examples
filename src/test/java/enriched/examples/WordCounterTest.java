@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class WordCounterTest {
 
-    private static List<String> testKeywords1 = Arrays.asList("one", "two");
+    private static List<String> testKeywords1 = Arrays.asList("one", "two", "buckle", "my", "color");
 
     @Test
     void setKeywords() {
@@ -25,7 +25,7 @@ class WordCounterTest {
     @Test
     void getKeywordCount() throws InterruptedException, ExecutionException, IOException {
         WordCounter.setKeywords(testKeywords1);
-        Integer result = WordCounter.getKeywordCount("http://www.google.com");
+        Integer result = WordCounter.getKeywordCount("https://raw.githubusercontent.com/dwyl/english-words/master/words.txt");
         assertEquals(6, result.intValue());
     }
 

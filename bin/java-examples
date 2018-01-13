@@ -1,0 +1,1 @@
+java -cp ./target/java-examples-1.0-SNAPSHOT.jar enriched.examples.ExampleCli
